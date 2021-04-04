@@ -12,8 +12,8 @@ app.use(express.json())
 
 app.post("/analytics", async (req, res) => {
   const {pathName} = req.body;
-  const f = pathName.split("/website/")[1];
-  await axios.get(GITHUB_URL + "/blob/main/website/" + f);
+  const f = pathName.split("/docs/")[1];
+  await axios.get(GITHUB_URL + "/blob/main/docs/" + f);
   res.sendStatus(200);
 })
 
