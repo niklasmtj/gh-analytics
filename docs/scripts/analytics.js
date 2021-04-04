@@ -2,7 +2,7 @@
   const host = window.location;
 
   const data = { pathName: host.pathname }
-  const res = await fetch("http://localhost:3000/analytics", {
+  const res = await fetch("https://gh-analytics.herokuapp.com/analytics", {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
